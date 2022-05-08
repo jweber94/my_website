@@ -19,7 +19,15 @@ h1 {
     text-align: center;
 }
 
+span {
+    color: white;
+}
+
 .under_construction {
     text-align: center;
     color: red;
+}
+
+.nav-link {
+    color: white; 
 }
