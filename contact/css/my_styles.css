@@ -41,3 +41,17 @@ div > iframe {
     border-color: black;
     border-width: 1px;
 }
+
+@media only screen and (max-width: 768px) {
+    .frame_width_sm {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .frame_width_lg {
+        width: 500px;
+        height: 350px;
+    }
+}
