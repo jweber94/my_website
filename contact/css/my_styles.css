@@ -1,0 +1,43 @@
+
+/* Site wide font */
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+
+    background-color: rgb(65, 119, 255);
+    color: white;
+}
+
+.column img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+span {
+    color: white;
+}
+
+.under_construction {
+    text-align: center;
+    color: red;
+}
+
+.nav-link {
+    color: white; 
+}
+
+.linkedin_color {
+    color: black;
+}
+
+div > iframe {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
