@@ -31,3 +31,29 @@ span {
 .nav-link {
     color: white; 
 }
+
+.link {
+    color: blue;
+}
+
+#kachel {
+    background-color: white;
+    border-radius: 5px;
+}
+
+#kachel > div > h2 {
+    color: black;
+}
+#kachel > div > p {
+    color: black;
+}
+
+#image_container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project_heading {
+    text-align: center;
+}
