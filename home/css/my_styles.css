@@ -23,11 +23,10 @@ span {
     color: white;
 }
 
-.under_construction {
-    text-align: center;
-    color: red;
-}
-
 .nav-link {
     color: white; 
+}
+
+.blackink {
+    color: black;
 }
