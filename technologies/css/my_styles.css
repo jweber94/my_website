@@ -23,11 +23,27 @@ span {
     color: white;
 }
 
-.under_construction {
-    text-align: center;
-    color: red;
-}
-
 .nav-link {
     color: white; 
+}
+
+.collapseable_margin {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.collapse_button {
+    border-radius: 10px;
+}
+
+.collapseable_textbox {
+    border-radius: 10px;
+}
+
+.collapse_heading {
+    border-radius: 10px;
+}
+
+.black_ink {
+    color: black;
 }
