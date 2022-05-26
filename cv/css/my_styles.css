@@ -87,3 +87,8 @@ li > p {
 li > span {
     color: black;
 }
+
+li > span > span {
+    color: black;
+    margin-left: 3px;
+} 
