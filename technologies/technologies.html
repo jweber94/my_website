@@ -53,21 +53,21 @@
         <div class="container">
           <h1>Technologies</h1>
           <div class="text-center">
-            The following are the main technologies that I worked with. Expand the boxes to read about my concrete experience with them. Have fun exploring it!
+            The following are the main technologies that I worked with. Expand the boxes to read about my concrete experience with them. The ordering is based on the amount of experience that I have with the listed technologies, starting with C++ as the programming language that I'm most experienced with. Have fun exploring it!
           </div>
           
           
           <div class="accordion mt-2" id="accordionExample">        
             <!-- C++ -->  
             <div class="accordion-item collapseable_margin">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed collapse_button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              <h2 class="accordion-header" id="cpp">
+                <button class="accordion-button collapsed collapse_button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCpp" aria-expanded="false" aria-controls="collapseCpp">
                   C++
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div id="collapseCpp" class="accordion-collapse collapse" aria-labelledby="cpp" data-bs-parent="#accordionExample">
                 <div class="accordion-body black_ink">
-                  C++ is my favourite programming language. I'm fascinated how it can be used to do very efficient and hardware related things and at the same time it is very good in abstracting things away. Starting in my last year of my bachelors studies, I program C++ for 4 years now. Besides my studies and my masters thesis, I took two online courses that are related to C++ during my educational career. One of them was the <a href="https://www.coursera.org/account/accomplishments/verify/FW8483LT5LUC" class="text-decoration-none" target="_blank">C++ for C programmers</a> course at coursera and Udacity's <a href="https://graduation.udacity.com/confirm/RJVVRRWQ" class="text-decoration-none" target="_blank">C++ Nanodegree</a>. Especially the last one was very helpful for my current job, since I learned a lot about memory management and multi threading.
+                  As my main programming language, I started working with it in my final year of my bachelor studies. Since then, I used it in most of the projects that I did during my journey from an undergrad student up until my time as a PhD student at the Forschungszentrum Informatik (FZI). I'm fascinated how it can be used to do very efficient and hardware related things and at the same time it is very good in abstracting things away. To improve my skills further, I did two online courses. One of them was the <a href="https://www.coursera.org/account/accomplishments/verify/FW8483LT5LUC" class="text-decoration-none" target="_blank">C++ for C programmers</a> course at coursera and Udacity's <a href="https://graduation.udacity.com/confirm/RJVVRRWQ" class="text-decoration-none" target="_blank">C++ Nanodegree</a>. Currently I mainly use C++17 in my role as a software engineer in the context of telecommunication technology. Doing that, I really like to program multi threaded applications and do proper memory management while I'm working on networking protocol layers like <a href="https://en.wikipedia.org/wiki/Session_Initiation_Protocol" target="_blank" class="text-decoration-none">SIP</a>. It is also a common task for me to read RFCs or other standardization manifestos and translate them to C++ code.
                 </div>
               </div>
             </div>
@@ -80,20 +80,111 @@
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body black_ink">
-                  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  Python is the programming language that I favour if C++ is not appropriate to the task that I want to accomplish. I gained my first experiences during my bachelors thesis, where I used it to program a deep learning model to do semantic labeling on images. Since then, I used it to do data analysis and data visualization or to automate things that would be done by hand otherwise. During my time as a PhD student, I programmed a <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" class="text-decoration-none">REST</a> service with it using <a href="https://en.wikipedia.org/wiki/Flask_(web_framework)" target="_blank" class="">Flask</a> that runs a machine learning model to do object detection on images. In my current role as a software engineer, I use python for most of the things that are not required to be optimized for runtime or memory usage, especially for backend web services. My favourite package manager is <a href="https://www.anaconda.com/products/distribution" target="_blank" class="text-decoration-none">anaconda</a>, since it did a lot of machine learning in the past, but if that is not appropriate, I commonly use a virtual environment and install my packages with pip. 
+                </div>
+              </div>
+            </div>
+            <!-- Linux -->
+            <div class="accordion-item collapseable_margin">
+              <h2 class="accordion-header" id="linux">
+                <button class="accordion-button collapsed collapse_button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinux" aria-expanded="false" aria-controls="collapseLinux">
+                  Linux
+                </button>
+              </h2>
+              <div id="collapseLinux" class="accordion-collapse collapse" aria-labelledby="linux" data-bs-parent="#accordionExample">
+                <div class="accordion-body black_ink">
+                  Linux is my favourite operating system since the end of my bachelors studies. For me, it is very convenient to have full (sudo) control over the OS and I really like to be in the terminal all day. My experience starts by building projects, goes over system configuration e.g. with systemd and updating configuration files of applications or configureing FTP servers. Logging into remote machines via ssh is also part of my daily business and goes up until creating debian packages for applications to make my code usable for other users that are not developers.
                 </div>
               </div>
             </div>
             <!-- Docker -->
             <div class="accordion-item collapseable_margin">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h2 class="accordion-header" id="docker">
+                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDocker" aria-expanded="false" aria-controls="collapseDocker">
                   Docker
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div id="collapseDocker" class="accordion-collapse collapse" aria-labelledby="docker" data-bs-parent="#accordionExample">
                 <div class="accordion-body black_ink">
-                  It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  Docker is a very powerful containerization tool to make your applications run on every system that has the docker daemon installed. It is also possible to create development containers, to avoid the "It runs on my machine"-problem. I started using it during my PhD time and currently using it on a daily basis in combination with docker-compose to create software projects with multiple components. It's a common task for me to create Dockerfiles, build containers and run images as a standalone system or within a compose project. I'm also able to configure more complicated things within docker based projects or to talk to the docker API from my code.
+                </div>
+              </div>
+            </div>
+            <!-- Kafka -->
+            <div class="accordion-item collapseable_margin">
+              <h2 class="accordion-header" id="kafka">
+                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKafka" aria-expanded="false" aria-controls="collapseKafka">
+                  Apache Kafka
+                </button>
+              </h2>
+              <div id="collapseKafka" class="accordion-collapse collapse" aria-labelledby="kafka" data-bs-parent="#accordionExample">
+                <div class="accordion-body black_ink">
+                  TODO
+                </div>
+              </div>
+            </div>
+            <!-- ROS -->
+            <div class="accordion-item collapseable_margin">
+              <h2 class="accordion-header" id="ros">
+                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRos" aria-expanded="false" aria-controls="collapseRos">
+                  ROS - Robot Operating System
+                </button>
+              </h2>
+              <div id="collapseRos" class="accordion-collapse collapse" aria-labelledby="ros" data-bs-parent="#accordionExample">
+                <div class="accordion-body black_ink">
+                  TODO
+                </div>
+              </div>
+            </div>
+            <!-- Tensorflow -->
+            <div class="accordion-item collapseable_margin">
+              <h2 class="accordion-header" id="tensorflow">
+                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTensorflow" aria-expanded="false" aria-controls="collapseTensorflow">
+                  Tensorflow
+                </button>
+              </h2>
+              <div id="collapseTensorflow" class="accordion-collapse collapse" aria-labelledby="tensorflow" data-bs-parent="#accordionExample">
+                <div class="accordion-body black_ink">
+                  TODO
+                </div>
+              </div>
+            </div>
+            <!-- Frontend -->
+            <div class="accordion-item collapseable_margin">
+              <h2 class="accordion-header" id="frontend">
+                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFrontend" aria-expanded="false" aria-controls="collapseFrontend">
+                  HTML, CSS and Javascript
+                </button>
+              </h2>
+              <div id="collapseFrontend" class="accordion-collapse collapse" aria-labelledby="frontend" data-bs-parent="#accordionExample">
+                <div class="accordion-body black_ink">
+                  TODO
+                </div>
+              </div>
+            </div>
+            <!-- Matlab -->
+            <div class="accordion-item collapseable_margin">
+              <h2 class="accordion-header" id="matlab">
+                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMatlab" aria-expanded="false" aria-controls="collapseMatlab">
+                  Matlab
+                </button>
+              </h2>
+              <div id="collapseMatlab" class="accordion-collapse collapse" aria-labelledby="matlab" data-bs-parent="#accordionExample">
+                <div class="accordion-body black_ink">
+                  TODO
+                </div>
+              </div>
+            </div>
+            <!-- Other Technologies -->
+            <div class="accordion-item collapseable_margin">
+              <h2 class="accordion-header" id="other">
+                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOther" aria-expanded="false" aria-controls="collapseOther">
+                  Other Technologies
+                </button>
+              </h2>
+              <div id="collapseOther" class="accordion-collapse collapse" aria-labelledby="other" data-bs-parent="#accordionExample">
+                <div class="accordion-body black_ink">
+                  TODO
                 </div>
               </div>
             </div>
