@@ -1,235 +1,360 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="imgs/my_logo.ico">
 
-        <title>Jens' Website</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="imgs/my_logo.ico">
 
-        <!-- Website wide used font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Source+Code+Pro:wght@500&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-        
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/my_styles.css">
-    </head>
-    
-    <body>
+  <title>Jens' Website</title>
 
-        <!-- Icons for the footer -->
-        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-            <symbol id="linkedin" viewBox="0 0 16 16">
-                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-            </symbol>
-            <symbol id="github" viewBox="0 0 16 16">
-                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-            </symbol>
-          </svg>
+  <!-- Website wide used font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Source+Code+Pro:wght@500&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
 
-        <!-- Header -->
-        <div class="container">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-              <a href="/my_website/home/index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-                <img src="imgs/my_logo.svg" width="40" height="32">
-                <span>Jens' Website</span>
-              </a>
-        
-              <ul class="nav nav-pills">
-                <li class="nav-item"><a href="/my_website/home/index.html" class="nav-link" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="/my_website/cv/cv.html" class="nav-link">Curriculum Vitae</a></li>
-                <li class="nav-item"><a href="/my_website/projects/projects.html" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="/my_website/technologies/technologies.html" class="nav-link active">Technologies</a></li>
-                <li class="nav-item"><a href="/my_website/blog/blog.html" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="/my_website/contact/contact.html" class="nav-link">Contact</a></li>
-              </ul>
-            </header>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/my_styles.css">
+</head>
+
+<body>
+
+  <!-- Icons for the footer -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="linkedin" viewBox="0 0 16 16">
+      <path
+        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+    </symbol>
+    <symbol id="github" viewBox="0 0 16 16">
+      <path
+        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+    </symbol>
+  </svg>
+
+  <!-- Header -->
+  <div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/my_website/home/index.html"
+        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+        <img src="imgs/my_logo.svg" width="40" height="32">
+        <span>Jens' Website</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/my_website/home/index.html" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="/my_website/cv/cv.html" class="nav-link">Curriculum Vitae</a></li>
+        <li class="nav-item"><a href="/my_website/projects/projects.html" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="/my_website/technologies/technologies.html"
+            class="nav-link active">Technologies</a></li>
+        <li class="nav-item"><a href="/my_website/blog/blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="/my_website/contact/contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </header>
+  </div>
+
+
+  <!-- Content -->
+  <div class="container">
+    <h1>Technologies</h1>
+    <div class="text-center">
+      The following are the main technologies that I worked with. Expand the boxes to read about my concrete experience
+      with them. The ordering is based on the amount of experience that I have with the listed technologies, starting
+      with C++ as the programming language that I'm most experienced with. Have fun exploring it!
+    </div>
+
+
+    <div class="accordion mt-2" id="accordionExample">
+      <!-- C++ -->
+      <div class="accordion-item collapseable_margin">
+        <h2 class="accordion-header" id="cpp">
+          <button class="accordion-button collapsed collapse_button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseCpp" aria-expanded="false" aria-controls="collapseCpp">
+            C++
+          </button>
+        </h2>
+        <div id="collapseCpp" class="accordion-collapse collapse" aria-labelledby="cpp"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body black_ink">
+            As my main programming language, I started working with it in my final year of my bachelor studies. Since
+            then, I used it in most of the projects that I did during my journey from an undergrad student up until now.
+            Doing so, I gained about 3 years of experience programming C++. I'm fascinated how it can be used to do very
+            efficient and hardware related things and at the same time it is very good in abstracting things away. To
+            improve my skills further, I did two online courses. One of them was the <a
+              href="https://www.coursera.org/account/accomplishments/verify/FW8483LT5LUC" class="text-decoration-none"
+              target="_blank">C++ for C programmers</a> course at coursera and Udacity's <a
+              href="https://graduation.udacity.com/confirm/RJVVRRWQ" class="text-decoration-none" target="_blank">C++
+              Nanodegree</a>. Currently I mainly use C++17 in my role as a software engineer in the context of
+            telecommunication technology. Doing that, I really like to program multi threaded applications and do proper
+            memory management while I'm working on the networking protocol layer. It is also a common task for me to
+            read RFCs or other standardization manifestos and translate them to C++ code.
           </div>
-        
-        
-        <!-- Content -->
-        <div class="container">
-          <h1>Technologies</h1>
-          <div class="text-center">
-            The following are the main technologies that I worked with. Expand the boxes to read about my concrete experience with them. The ordering is based on the amount of experience that I have with the listed technologies, starting with C++ as the programming language that I'm most experienced with. Have fun exploring it!
+        </div>
+      </div>
+      <!-- Python -->
+      <div class="accordion-item collapseable_margin">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed collapse_button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Python
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body black_ink">
+            Python is the programming language that I favour if C++ is not appropriate to the task that I want to
+            accomplish. I gained my first experiences during my bachelors thesis, where I used it to program a deep
+            learning model to do semantic labeling on images. Since then, I used it to do data analysis and data
+            visualization or to automate things that would be done by hand otherwise. During my time as a PhD student, I
+            programmed a <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank"
+              class="text-decoration-none">REST</a> service with it using <a
+              href="https://en.wikipedia.org/wiki/Flask_(web_framework)" target="_blank" class="">Flask</a> that runs a
+            machine learning model to do object detection on images. In my current role as a software engineer, I use
+            python for most of the things that are not required to be optimized for runtime or memory usage, especially
+            for backend web services. My favourite package manager is <a
+              href="https://www.anaconda.com/products/distribution" target="_blank"
+              class="text-decoration-none">anaconda</a>, since it did a lot of machine learning in the past, but if that
+            is not appropriate, I commonly use a virtual environment and install my packages with pip.
           </div>
-          
-          
-          <div class="accordion mt-2" id="accordionExample">        
-            <!-- C++ -->  
-            <div class="accordion-item collapseable_margin">
-              <h2 class="accordion-header" id="cpp">
-                <button class="accordion-button collapsed collapse_button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCpp" aria-expanded="false" aria-controls="collapseCpp">
-                  C++
-                </button>
-              </h2>
-              <div id="collapseCpp" class="accordion-collapse collapse" aria-labelledby="cpp" data-bs-parent="#accordionExample">
-                <div class="accordion-body black_ink">
-                  As my main programming language, I started working with it in my final year of my bachelor studies. Since then, I used it in most of the projects that I did during my journey from an undergrad student up until now. Doing so, I gained about 3 years of experience programming C++. I'm fascinated how it can be used to do very efficient and hardware related things and at the same time it is very good in abstracting things away. To improve my skills further, I did two online courses. One of them was the <a href="https://www.coursera.org/account/accomplishments/verify/FW8483LT5LUC" class="text-decoration-none" target="_blank">C++ for C programmers</a> course at coursera and Udacity's <a href="https://graduation.udacity.com/confirm/RJVVRRWQ" class="text-decoration-none" target="_blank">C++ Nanodegree</a>. Currently I mainly use C++17 in my role as a software engineer in the context of telecommunication technology. Doing that, I really like to program multi threaded applications and do proper memory management while I'm working on the networking protocol layer. It is also a common task for me to read RFCs or other standardization manifestos and translate them to C++ code.
-                </div>
-              </div>
-            </div>
-            <!-- Python -->
-            <div class="accordion-item collapseable_margin">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed collapse_button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Python
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body black_ink">
-                  Python is the programming language that I favour if C++ is not appropriate to the task that I want to accomplish. I gained my first experiences during my bachelors thesis, where I used it to program a deep learning model to do semantic labeling on images. Since then, I used it to do data analysis and data visualization or to automate things that would be done by hand otherwise. During my time as a PhD student, I programmed a <a href="https://en.wikipedia.org/wiki/Representational_state_transfer" target="_blank" class="text-decoration-none">REST</a> service with it using <a href="https://en.wikipedia.org/wiki/Flask_(web_framework)" target="_blank" class="">Flask</a> that runs a machine learning model to do object detection on images. In my current role as a software engineer, I use python for most of the things that are not required to be optimized for runtime or memory usage, especially for backend web services. My favourite package manager is <a href="https://www.anaconda.com/products/distribution" target="_blank" class="text-decoration-none">anaconda</a>, since it did a lot of machine learning in the past, but if that is not appropriate, I commonly use a virtual environment and install my packages with pip. 
-                </div>
-              </div>
-            </div>
-            <!-- Linux -->
-            <div class="accordion-item collapseable_margin">
-              <h2 class="accordion-header" id="linux">
-                <button class="accordion-button collapsed collapse_button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinux" aria-expanded="false" aria-controls="collapseLinux">
-                  Linux
-                </button>
-              </h2>
-              <div id="collapseLinux" class="accordion-collapse collapse" aria-labelledby="linux" data-bs-parent="#accordionExample">
-                <div class="accordion-body black_ink">
-                  Linux is my favourite operating system since the end of my bachelors studies. For me, it is very convenient to have full (sudo) control over the OS and I really like to be in the terminal all day. My experience starts by building projects, goes over system configuration e.g. with systemd and updating configuration files of applications or configureing FTP servers. Logging into remote machines via ssh is also part of my daily business and goes up until creating debian packages for applications to make my code usable for other users that are not developers.
-                </div>
-              </div>
-            </div>
-            <!-- Docker -->
-            <div class="accordion-item collapseable_margin">
-              <h2 class="accordion-header" id="docker">
-                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDocker" aria-expanded="false" aria-controls="collapseDocker">
-                  Docker
-                </button>
-              </h2>
-              <div id="collapseDocker" class="accordion-collapse collapse" aria-labelledby="docker" data-bs-parent="#accordionExample">
-                <div class="accordion-body black_ink">
-                  Docker is a very powerful containerization tool to make your applications run on every system that has the docker daemon installed. It is also possible to create development containers, to avoid the "It runs on my machine"-problem. I started using it during my PhD time and currently using it on a daily basis in combination with docker-compose to create software projects with multiple components. It's a common task for me to create Dockerfiles, build containers and run images as a standalone system or within a compose project. I'm also able to configure more complicated things within docker based projects or to talk to the docker API from my code.
-                </div>
-              </div>
-            </div>
-            <!-- Kafka -->
-            <div class="accordion-item collapseable_margin">
-              <h2 class="accordion-header" id="kafka">
-                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKafka" aria-expanded="false" aria-controls="collapseKafka">
-                  Apache Kafka
-                </button>
-              </h2>
-              <div id="collapseKafka" class="accordion-collapse collapse" aria-labelledby="kafka" data-bs-parent="#accordionExample">
-                <div class="accordion-body black_ink">
-                  Kafka is a middleware which is used in distributed big data systems. Based on a publisher-subscriber system, it can be used to buffer, distribute and duplicate data in microservice appilcation architectures. Besides the pure functionallity, there are some convenience tools like kafkacat (former the terminal interface kcat) and support for a lot of programming languages. I program consumers as well as producers with C++ and I'm also able to configure the kafka-broker and the zookeeper to fit system-requirements.
-                </div>
-              </div>
-            </div>
-            <!-- ROS -->
-            <div class="accordion-item collapseable_margin">
-              <h2 class="accordion-header" id="ros">
-                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRos" aria-expanded="false" aria-controls="collapseRos">
-                  ROS - Robot Operating System
-                </button>
-              </h2>
-              <div id="collapseRos" class="accordion-collapse collapse" aria-labelledby="ros" data-bs-parent="#accordionExample">
-                <div class="accordion-body black_ink">
-                  The <a href="https://www.ros.org/" class="text-decoration-none" target="_blank">Robot Operation System</a> (short "ROS") is a middleware that is commonly used in the area of robotics and highly automated driving. It abstracts the communication layer between different services away such that the developer can concentrate on the algorithmic part. Commonly, the execution of algorithms that are encapsulated within so called "nodes" are message based, since ROS incooperates the publisher-subscriber pattern. Besides that, ROS delivers a lot of convenient tools for visualization (Rviz) and a huge amount of libraries that implement common robotics algorithms as well as some drivers for hardware interaction. I used it during my time as a working student at the Forschungszentrum Informatik and during my time as a PhD student there, automating an autonomous shuttle mini-bus for a research project, called "<a href="https://www.eva-shuttle.de/" class="text-decoration-none" target="_blank">EVA-Shuttle</a>". By doing that, I gained about 2 years of working experience with ROS. (ROS 1, I didn't do anything with ROS 2 by the time.)
-                </div>
-              </div>
-            </div>
-            <!-- Tensorflow -->
-            <div class="accordion-item collapseable_margin">
-              <h2 class="accordion-header" id="tensorflow">
-                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTensorflow" aria-expanded="false" aria-controls="collapseTensorflow">
-                  Tensorflow
-                </button>
-              </h2>
-              <div id="collapseTensorflow" class="accordion-collapse collapse" aria-labelledby="tensorflow" data-bs-parent="#accordionExample">
-                <div class="accordion-body black_ink">
-                  <a href="https://www.tensorflow.org/" class="text-decoration-none" target="_blank">Tensorflow</a> is a machine learning framework, developed by google. My first experience with it were during my bachelors thesis, where I used it to program a deep convolutional neural network that labeled lanes within images. Back then, I used Tensorflow 1.x, which is outdated yet. I used Tensorflow 2.x to program my own version of the famous <a href="https://arxiv.org/pdf/1804.02767.pdf;" class="text-decoration-none" target="_blank">YoloV3</a> algorithm and other object detectors like <a href="https://arxiv.org/pdf/1606.03473.pdf" class="text-decoration-none" target="_blank">Faster-RCNN</a> for my PhD topic "Deep Learning based multiple object tracking in intelligent infrastructures and autonomouos driving". Besides the huge community, Tensorflow delivers convenient tools like tensorboard and interfaces for the integration of machine learning models on mobile applications or web technologies, which makes it a good choice if you want to incooperate machine learning in a real world application. To get started with tensorflow 2, I did the coursera courses "<a href="https://www.coursera.org/account/accomplishments/verify/KUKJRJB3P8PL" class="text-decoration-none" target="_blank">Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning</a>" and "<a href="https://www.coursera.org/account/accomplishments/verify/L7JFGCL8EDTG" class="text-decoration-none" target="_blank">Convolutional Neural Networks in TensorFlow</a>". 
-                </div>
-              </div>
-            </div>
-            <!-- Frontend -->
-            <div class="accordion-item collapseable_margin">
-              <h2 class="accordion-header" id="frontend">
-                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFrontend" aria-expanded="false" aria-controls="collapseFrontend">
-                  HTML, CSS and Javascript
-                </button>
-              </h2>
-              <div id="collapseFrontend" class="accordion-collapse collapse" aria-labelledby="frontend" data-bs-parent="#accordionExample">
-                <div class="accordion-body black_ink">
-                  After I decided to learn about web development to improve my skills as a professional software engineer, I did two frontend courses on coursera. The first one was "<a href="https://www.coursera.org/account/accomplishments/verify/N2PC3UUD9E5X?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" class="text-decoration-none link" target="_blank">HTML, CSS and Javascript for Web Developers</a>" and the second one was "<a href="https://www.coursera.org/account/accomplishments/verify/PUCRCPDEGDEV?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" class="text-decoration-none link" target="_blank">Single Page Web Applications with AngularJS</a>". After finishing the two courses, I decided to create this website as a first real-world project to get my feed wet with frontend web development. Currently, I'm about to plan furter projects that are based on angular 2.x to create more sophisticated web applications that also communicate with a backend. Stay tuned for it. ;-) 
-                </div>
-              </div>
-            </div>
-            <!-- Angular and Typescript -->
-            <div class="accordion-item collapseable_margin">
-              <h2 class="accordion-header" id="angular_ts">
-                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAngularTs" aria-expanded="false" aria-controls="collapseAngularTs">
-                  Angular and Typescript
-                </button>
-              </h2>
-              <div id="collapseAngularTs" class="accordion-collapse collapse" aria-labelledby="angular_ts" data-bs-parent="#accordionExample">
-                <div class="accordion-body black_ink">
-                  Building upon the knowlage that I've gained during my journey to web technologies with HTML, CSS and Javascript by doing the aforementioned coursera courses and programming this website, I started learning the more sophisticated web-framework <a href="https://angular.io/" class="text-decoration-none link" target="_blank">angular</a> 13. To work properly with angular, I needed to learn the <a href="https://en.wikipedia.org/wiki/TypeScript" class="text-decoration-none link" target="_blank">Typescript</a> syntax first. Doing this, I was able to create my first CRUD app and more will follow.
-                </div>
-              </div>
-            </div>
-            <!-- Matlab -->
-            <div class="accordion-item collapseable_margin">
-              <h2 class="accordion-header" id="matlab">
-                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMatlab" aria-expanded="false" aria-controls="collapseMatlab">
-                  Matlab
-                </button>
-              </h2>
-              <div id="collapseMatlab" class="accordion-collapse collapse" aria-labelledby="matlab" data-bs-parent="#accordionExample">
-                <div class="accordion-body black_ink">
-                  As a mechanical engineer, matlab/simulink is the state-of-the-art program for simulation of mathmatical models, modeling and control system development. I worked with it within multiple courses during my bachelors and masters degree as well as during my intership at Porsche AG, where I created a longitudinal simulation of an electrified vehicle with simulink. To improve my skills further, I did an online course "<a href="https://www.coursera.org/account/accomplishments/verify/8EXJQDUJEKYH" class="text-decoration-none" target="_blank">Introduction to programming with matlab</a>", where I learned how to structure my matlab coding projects better.   
-                </div>
-              </div>
-            </div>
-            <!-- Other Technologies -->
-            <div class="accordion-item collapseable_margin">
-              <h2 class="accordion-header" id="other">
-                <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOther" aria-expanded="false" aria-controls="collapseOther">
-                  Other Technologies
-                </button>
-              </h2>
-              <div id="collapseOther" class="accordion-collapse collapse" aria-labelledby="other" data-bs-parent="#accordionExample">
-                <div class="accordion-body black_ink">
-                  <ul>
-                    <li><b>Bash</b>: To create convenience scripts in my linux development environment</li>
-                    <li><b>Jupyter-Notebook</b>: To implement and visualize machine learning projects</li>
-                    <li><b>Gitlab-CI</b>: To build CI-Pipelines and create CI-runners with the gitlab-runner terminal interface</li>
-                    <li><b>Wireshark</b>: I use wireshark to troubleshoot networking problems and check networking protocols</li>
-                    <li><b>PostgreSQL</b>: In order to persist data on a relational database, PostgreSQL is a good choice</li>
-                    <li><b>Prometheus</b>: To store time series data</li>
-                    <li><b>Graphana</b>: To visualize time series data</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+        </div>
+      </div>
+      <!-- Linux -->
+      <div class="accordion-item collapseable_margin">
+        <h2 class="accordion-header" id="linux">
+          <button class="accordion-button collapsed collapse_button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseLinux" aria-expanded="false" aria-controls="collapseLinux">
+            Linux
+          </button>
+        </h2>
+        <div id="collapseLinux" class="accordion-collapse collapse" aria-labelledby="linux"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body black_ink">
+            Linux is my favourite operating system since the end of my bachelors studies. For me, it is very convenient
+            to have full (sudo) control over the OS and I really like to be in the terminal all day. My experience
+            starts by building projects, goes over system configuration e.g. with systemd and updating configuration
+            files of applications or configureing FTP servers. Logging into remote machines via ssh is also part of my
+            daily business and goes up until creating debian packages for applications to make my code usable for other
+            users that are not developers.
           </div>
-        
-        <!-- Footer -->
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-              <div class="ms-3 col-md-4 col-sm-12 d-flex align-items-center">
-                <a href="/my_website/home/index.html" class="me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                    <img src="imgs/my_logo.svg" alt="Logo Jens" width="28" height="28">
-                </a>
-                <span class="ms-3">&copy; 2022 Jens Weber</span>
-              </div>
-          
-              <ul class="nav col-md-4 col-sm-12 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-muted" target="_blank" href="https://de.linkedin.com/in/jens-weber-1094"><svg class="bi" width="24" height="24"><use xlink:href="#linkedin"/></svg></a></li>
-                <li class="ms-3"><a class="text-muted" target="_blank" href="https://github.com/jweber94"><svg class="bi" width="24" height="24"><use xlink:href="#github"/></svg></a></li>
-              </ul>
-            </footer>
+        </div>
+      </div>
+      <!-- Docker -->
+      <div class="accordion-item collapseable_margin">
+        <h2 class="accordion-header" id="docker">
+          <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseDocker" aria-expanded="false" aria-controls="collapseDocker">
+            Docker
+          </button>
+        </h2>
+        <div id="collapseDocker" class="accordion-collapse collapse" aria-labelledby="docker"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body black_ink">
+            Docker is a very powerful containerization tool to make your applications run on every system that has the
+            docker daemon installed. It is also possible to create development containers, to avoid the "It runs on my
+            machine"-problem. I started using it during my PhD time and currently using it on a daily basis in
+            combination with docker-compose to create software projects with multiple components. It's a common task for
+            me to create Dockerfiles, build containers and run images as a standalone system or within a compose
+            project. I'm also able to configure more complicated things within docker based projects or to talk to the
+            docker API from my code.
+          </div>
+        </div>
+      </div>
+      <!-- Kafka -->
+      <div class="accordion-item collapseable_margin">
+        <h2 class="accordion-header" id="kafka">
+          <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseKafka" aria-expanded="false" aria-controls="collapseKafka">
+            Apache Kafka
+          </button>
+        </h2>
+        <div id="collapseKafka" class="accordion-collapse collapse" aria-labelledby="kafka"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body black_ink">
+            Kafka is a middleware which is used in distributed big data systems. Based on a publisher-subscriber system,
+            it can be used to buffer, distribute and duplicate data in microservice appilcation architectures. Besides
+            the pure functionallity, there are some convenience tools like kafkacat (former the terminal interface kcat)
+            and support for a lot of programming languages. I program consumers as well as producers with C++ and I'm
+            also able to configure the kafka-broker and the zookeeper to fit system-requirements.
+          </div>
+        </div>
+      </div>
+      <!-- ROS -->
+      <div class="accordion-item collapseable_margin">
+        <h2 class="accordion-header" id="ros">
+          <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseRos" aria-expanded="false" aria-controls="collapseRos">
+            ROS - Robot Operating System
+          </button>
+        </h2>
+        <div id="collapseRos" class="accordion-collapse collapse" aria-labelledby="ros"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body black_ink">
+            The <a href="https://www.ros.org/" class="text-decoration-none" target="_blank">Robot Operation System</a>
+            (short "ROS") is a middleware that is commonly used in the area of robotics and highly automated driving. It
+            abstracts the communication layer between different services away such that the developer can concentrate on
+            the algorithmic part. Commonly, the execution of algorithms that are encapsulated within so called "nodes"
+            are message based, since ROS incooperates the publisher-subscriber pattern. Besides that, ROS delivers a lot
+            of convenient tools for visualization (Rviz) and a huge amount of libraries that implement common robotics
+            algorithms as well as some drivers for hardware interaction. I used it during my time as a working student
+            at the Forschungszentrum Informatik and during my time as a PhD student there, automating an autonomous
+            shuttle mini-bus for a research project, called "<a href="https://www.eva-shuttle.de/"
+              class="text-decoration-none" target="_blank">EVA-Shuttle</a>". By doing that, I gained about 2 years of
+            working experience with ROS. (ROS 1, I didn't do anything with ROS 2 by the time.)
+          </div>
+        </div>
+      </div>
+      <!-- Tensorflow -->
+      <div class="accordion-item collapseable_margin">
+        <h2 class="accordion-header" id="tensorflow">
+          <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTensorflow" aria-expanded="false" aria-controls="collapseTensorflow">
+            Tensorflow
+          </button>
+        </h2>
+        <div id="collapseTensorflow" class="accordion-collapse collapse" aria-labelledby="tensorflow"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body black_ink">
+            <a href="https://www.tensorflow.org/" class="text-decoration-none" target="_blank">Tensorflow</a> is a
+            machine learning framework, developed by google. My first experience with it were during my bachelors
+            thesis, where I used it to program a deep convolutional neural network that labeled lanes within images.
+            Back then, I used Tensorflow 1.x, which is outdated yet. I used Tensorflow 2.x to program my own version of
+            the famous <a href="https://arxiv.org/pdf/1804.02767.pdf;" class="text-decoration-none"
+              target="_blank">YoloV3</a> algorithm and other object detectors like <a
+              href="https://arxiv.org/pdf/1606.03473.pdf" class="text-decoration-none" target="_blank">Faster-RCNN</a>
+            for my PhD topic "Deep Learning based multiple object tracking in intelligent infrastructures and
+            autonomouos driving". Besides the huge community, Tensorflow delivers convenient tools like tensorboard and
+            interfaces for the integration of machine learning models on mobile applications or web technologies, which
+            makes it a good choice if you want to incooperate machine learning in a real world application. To get
+            started with tensorflow 2, I did the coursera courses "<a
+              href="https://www.coursera.org/account/accomplishments/verify/KUKJRJB3P8PL" class="text-decoration-none"
+              target="_blank">Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep
+              Learning</a>" and "<a href="https://www.coursera.org/account/accomplishments/verify/L7JFGCL8EDTG"
+              class="text-decoration-none" target="_blank">Convolutional Neural Networks in TensorFlow</a>".
+          </div>
+        </div>
+      </div>
+      <!-- Frontend -->
+      <div class="accordion-item collapseable_margin">
+        <h2 class="accordion-header" id="frontend">
+          <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFrontend" aria-expanded="false" aria-controls="collapseFrontend">
+            HTML, CSS and Javascript
+          </button>
+        </h2>
+        <div id="collapseFrontend" class="accordion-collapse collapse" aria-labelledby="frontend"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body black_ink">
+            After I decided to learn about web development to improve my skills as a professional software engineer, I
+            did two frontend courses on coursera. The first one was "<a
+              href="https://www.coursera.org/account/accomplishments/verify/N2PC3UUD9E5X?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+              class="text-decoration-none link" target="_blank">HTML, CSS and Javascript for Web Developers</a>" and the
+            second one was "<a
+              href="https://www.coursera.org/account/accomplishments/verify/PUCRCPDEGDEV?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+              class="text-decoration-none link" target="_blank">Single Page Web Applications with AngularJS</a>". After
+            finishing the two courses, I decided to create this website as a first real-world project to get my feed wet
+            with frontend web development. Currently, I'm about to plan furter projects that are based on angular 2.x to
+            create more sophisticated web applications that also communicate with a backend. Stay tuned for it. ;-)
+          </div>
+        </div>
+      </div>
+      <!-- Angular and Typescript -->
+      <div class="accordion-item collapseable_margin">
+        <h2 class="accordion-header" id="angular_ts">
+          <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseAngularTs" aria-expanded="false" aria-controls="collapseAngularTs">
+            Angular and Typescript
+          </button>
+        </h2>
+        <div id="collapseAngularTs" class="accordion-collapse collapse" aria-labelledby="angular_ts"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body black_ink">
+            Building upon the knowlage that I've gained during my journey to web technologies with HTML, CSS and
+            Javascript by doing the aforementioned coursera courses and programming this website, I started learning the
+            more sophisticated web-framework <a href="https://angular.io/" class="text-decoration-none link"
+              target="_blank">angular</a> 13. To work properly with angular, I needed to learn the <a
+              href="https://en.wikipedia.org/wiki/TypeScript" class="text-decoration-none link"
+              target="_blank">Typescript</a> syntax first. Doing this, I was able to create my first CRUD app and more
+            will follow.
+          </div>
+        </div>
+      </div>
+      <!-- Matlab -->
+      <div class="accordion-item collapseable_margin">
+        <h2 class="accordion-header" id="matlab">
+          <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseMatlab" aria-expanded="false" aria-controls="collapseMatlab">
+            Matlab
+          </button>
+        </h2>
+        <div id="collapseMatlab" class="accordion-collapse collapse" aria-labelledby="matlab"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body black_ink">
+            As a mechanical engineer, matlab/simulink is the state-of-the-art program for simulation of mathmatical
+            models, modeling and control system development. I worked with it within multiple courses during my
+            bachelors and masters degree as well as during my intership at Porsche AG, where I created a longitudinal
+            simulation of an electrified vehicle with simulink. To improve my skills further, I did an online course "<a
+              href="https://www.coursera.org/account/accomplishments/verify/8EXJQDUJEKYH" class="text-decoration-none"
+              target="_blank">Introduction to programming with matlab</a>", where I learned how to structure my matlab
+            coding projects better.
+          </div>
+        </div>
+      </div>
+      <!-- Other Technologies -->
+      <div class="accordion-item collapseable_margin">
+        <h2 class="accordion-header" id="other">
+          <button class="accordion-button collapsed collapse_button test" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseOther" aria-expanded="false" aria-controls="collapseOther">
+            Other Technologies
+          </button>
+        </h2>
+        <div id="collapseOther" class="accordion-collapse collapse" aria-labelledby="other"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body black_ink">
+            <ul>
+              <li><b>Bash</b>: To create convenience scripts in my linux development environment</li>
+              <li><b>Jupyter-Notebook</b>: To implement and visualize machine learning projects</li>
+              <li><b>Gitlab-CI</b>: To build CI-Pipelines and create CI-runners with the gitlab-runner terminal
+                interface</li>
+              <li><b>Wireshark</b>: I use wireshark to troubleshoot networking problems and check networking protocols
+              </li>
+              <li><b>PostgreSQL</b>: In order to persist data on a relational database, PostgreSQL is a good choice</li>
+              <li><b>Prometheus</b>: To store time series data</li>
+              <li><b>Graphana</b>: To visualize time series data</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="ms-3 col-md-4 col-sm-12 d-flex align-items-center">
+          <a href="/my_website/home/index.html" class="me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <img src="imgs/my_logo.svg" alt="Logo Jens" width="28" height="28">
+          </a>
+          <span class="ms-3">&copy; 2022 Jens Weber</span>
         </div>
 
-        <!-- Javascript includes -->
-        <script src="src/jquery-3.6.0.min.js"></script> <!-- needs to be included before bootstrap since bootstrap depends on jquery -->
-        <script src="src/bootstrap.min.js"></script>
-    </body>
+        <ul class="nav col-md-4 col-sm-12 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" target="_blank" href="https://de.linkedin.com/in/jens-weber-1094"><svg
+                class="bi" width="24" height="24">
+                <use xlink:href="#linkedin" />
+              </svg></a></li>
+          <li class="ms-3"><a class="text-muted" target="_blank" href="https://github.com/jweber94"><svg class="bi"
+                width="24" height="24">
+                <use xlink:href="#github" />
+              </svg></a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Javascript includes -->
+    <script src="src/jquery-3.6.0.min.js"></script>
+    <!-- needs to be included before bootstrap since bootstrap depends on jquery -->
+    <script src="src/bootstrap.min.js"></script>
+</body>
+
 </html>

@@ -1,63 +1,62 @@
-
 /* Site wide font */
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-family: 'Source Code Pro', monospace;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
 
-    background-color: rgb(65, 119, 255);
-    color: white;
+  background-color: rgb(65, 119, 255);
+  color: white;
 }
 
 .column img {
-    vertical-align: middle;
-    width: 100%;
+  vertical-align: middle;
+  width: 100%;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 span {
-    color: white;
+  color: white;
 }
 
 .under_construction {
-    text-align: center;
-    color: red;
+  text-align: center;
+  color: red;
 }
 
 .nav-link {
-    color: white; 
+  color: white;
 }
 
 .link {
-    color: blue;
+  color: blue;
 }
 
 #kachel {
-    background-color: white;
-    border-radius: 5px;
+  background-color: white;
+  border-radius: 5px;
 }
 
 #kachel > div > div > h2 {
-    color: black;
+  color: black;
 }
 #kachel > div > div > p {
-    color: black;
+  color: black;
 }
 
 #image_container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .project_heading {
-    text-align: center;
+  text-align: center;
 }
 
 .intro_text {
-    text-align: center;
+  text-align: center;
 }
