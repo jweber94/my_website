@@ -1,253 +1,435 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="imgs/my_logo.ico" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="imgs/my_logo.ico">
+    <title>Jens' Website</title>
 
-  <title>Jens' Website</title>
+    <!-- Website wide used font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Source+Code+Pro:wght@500&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Website wide used font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Source+Code+Pro:wght@500&family=Ubuntu:wght@300&display=swap"
-    rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/my_styles.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/my_styles.css">
-</head>
+  <body>
+    <!-- Icons for the footer -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+      <symbol id="linkedin" viewBox="0 0 16 16">
+        <path
+          d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+        />
+      </symbol>
+      <symbol id="github" viewBox="0 0 16 16">
+        <path
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+        />
+      </symbol>
+    </svg>
 
-<body>
-
-  <!-- Icons for the footer -->
-  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="linkedin" viewBox="0 0 16 16">
-      <path
-        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-    </symbol>
-    <symbol id="github" viewBox="0 0 16 16">
-      <path
-        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-    </symbol>
-  </svg>
-
-  <!-- Header -->
-  <div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-      <a href="/my_website/home/index.html"
-        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-        <img src="imgs/my_logo.svg" width="40" height="32">
-        <span>Jens' Website</span>
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="/my_website/home/index.html" class="nav-link" aria-current="page">Home</a></li>
-        <li class="nav-item"><a href="/my_website/cv/cv.html" class="nav-link">Curriculum Vitae</a></li>
-        <li class="nav-item"><a href="/my_website/projects/projects.html" class="nav-link active">Projects</a></li>
-        <li class="nav-item"><a href="/my_website/technologies/technologies.html" class="nav-link">Technologies</a></li>
-        <li class="nav-item"><a href="/my_website/blog/blog.html" class="nav-link">Blog</a></li>
-        <li class="nav-item"><a href="/my_website/contact/contact.html" class="nav-link">Contact</a></li>
-      </ul>
-    </header>
-  </div>
-
-
-  <!-- Content -->
-  <div class="container">
-    <h1>Projects</h1>
-    <div class="intro_text">
-      Here are some projects that I build in my free time besides my full time job and that I am most proud of. Have fun
-      by looking at them and have a look at the code on my github account. Please refer that I do these projects in a
-      non professional manner. Most of the time, I do the things that I show off here for the first time to learn
-      something which I'm currently courious about or to use in it my full time job and not to show off the most shiny
-      project.
-    </div>
-    <!-- Mandelbrodt Set -->
-    <div class="px-5 py-2 row">
-      <div class="container">
-        <div id="kachel" class="container">
-          <div class="row py-2 px-2">
-            <div class="col-lg-8 col-md-8 col-sm-8 py-2 px-2">
-              <h2 class="project_heading">Mandelbrodt Convergency Radius</h2>
-              <p>Math is beautiful! I really like mathematical theory, especially if it is as beautiful as the
-                mandelbrodt set. On the horizontal axis is the real part and on the vertical axis is the imaginary part
-                of the complex number <math xmlns="http://www.w3.org/1998/Math/MathML">z_i = z_{i+1}+c</math>. If we
-                iterate this complex number sequence until the convergency radius is small enought and print this result
-                as a color based on the convergency radius, we see the full beauty of mathmatical equations. Do you like
-                math too? Try out the code of my project. Its very simple to run the docker container and produce this
-                image and try out other complex number sequences and other parts of the mandelbrodt set. The project is
-                written in plain C++ with no libraries. The idea for this project came from a university assignment that
-                I did during my masters studies.</p>
-              <a href="https://github.com/jweber94/complex_number_sequence" class="text-decoration-none link"
-                target="_blank">Code</a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 text-center" id="image_container">
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <a href="https://github.com/jweber94/complex_number_sequence" target="_blank">
-                  <img class="img-fluid" src="imgs/1A.png" alt="mandelbrod_set">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Dijkstras shortest path -->
-    <div class="px-5 py-2 row">
-      <div class="container">
-        <div id="kachel" class="container">
-          <div class="row py-2 px-2">
-            <div class="col-lg-4 col-md-4 col-sm-4 text-center" id="image_container">
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <a href="https://github.com/jweber94/dijkstras_shortest_path" target="_blank">
-                  <img class="img-fluid" src="imgs/dijksta_terminal_printout.png" alt="dijkstra">
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-8 py-2 px-2">
-              <h2 class="project_heading">Dijkstras Shortest Path Algorithm</h2>
-              <p>Dijkstras shortest path algorithm is widely used in appilcations from autonomous driving over game
-                development to financial decision making. The project that you'll find on github is a just started try
-                of implementing my own version of it from scratch. The focus was not to make the prettiest code or the
-                most convenient implementation, but to get a very basic hands on to graph algorithms, especially to
-                learn about the two implementation possabilities of implementing it as a graph class or a matrix. Have
-                fun looking at this <i>currently unfinished</i> project.</p>
-              <a href="https://github.com/jweber94/dijkstras_shortest_path" class="text-decoration-none link"
-                target="_blank">Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Angular ToDo List -->
-    <div class="px-5 py-2 row">
-      <div class="container">
-        <div id="kachel" class="container">
-          <div class="row py-2 px-2">
-            <div class="col-lg-8 col-md-8 col-sm-8 py-2 px-2">
-              <h2 class="project_heading">ToDo List with Angular</h2>
-              <p>Also I did the Hello World of CRUD applications. In order to get started with more advanced web
-                applications I programmed a ToDo List app with angular 13 (which I noticed that it is also a good app to
-                make your groceries shopping list ;-) ). While doing this, I learned the Typescript syntax as well as
-                how angular projects are structured. The project is hosted on github pages and if you are curios about
-                my implementation, you can check it out <a href="https://jweber94.github.io/angular_todo_app/"
-                  class="text-decoration-none link" target="_blank">here</a>. I had a lot of fun doing this project and
-                I'm sure to build another web app with angular soon.</p>
-              <a href="https://github.com/jweber94/angular_todo_app" class="text-decoration-none link"
-                target="_blank">Code</a>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 text-center" id="image_container">
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <a href="https://jweber94.github.io/angular_todo_app/" target="_blank">
-                  <img class="img-fluid" src="imgs/220612_todo_screenshot.png" alt="my_website_logo">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- My Website -->
-    <div class="px-5 py-2 row">
-      <div class="container">
-        <div id="kachel" class="container">
-          <div class="row py-2 px-2">
-            <div class="col-lg-4 col-md-4 col-sm-4 text-center" id="image_container">
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <a href="/my_website/home/index.html" target="_blank">
-                  <img class="img-fluid" src="imgs/my_logo.svg" alt="my_website_logo">
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-8 py-2 px-2">
-              <h2 class="project_heading">My Website</h2>
-              <p>Also my website is a project for me, that I am very proud of. Since I do not have an educational
-                background in computer science, I never learned something about web frontend technologies. To
-                familiarize myself with the topic, I did the cousera courses "<a
-                  href="https://www.coursera.org/account/accomplishments/verify/N2PC3UUD9E5X?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
-                  class="text-decoration-none link" target="_blank">HTML, CSS and Javascript for Web Developers</a>" and
-                "<a
-                  href="https://www.coursera.org/account/accomplishments/verify/PUCRCPDEGDEV?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
-                  class="text-decoration-none link" target="_blank">Single Page Web Applications with AngularJS</a>".
-                After finishing these courses, I started programming my website as a first real world project. I am
-                totally aware that this is far away from a modern front end application website, but as a first attemped
-                to get my feed wet, I think it is a very good start.</p>
-              <a href="https://github.com/jweber94/my_website" class="text-decoration-none link"
-                target="_blank">Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- Other projects -->
-    <div class="px-5 py-2 row">
-      <div class="container">
-        <div id="kachel" class="container">
-          <div class="row py-2 px-2">
-            <div class="col-lg-8 col-md-8 col-sm-8 py-2 px-2">
-              <h2 class="project_heading">Other Projects</h2>
-              <p>As a former scientist and life long learner, I did and still do a lot of coures to familiarize myself
-                with new technologies or learn about new algorithms or concepts that I don't know. The coolest projects
-                were the ons that I did during the <a href="https://graduation.udacity.com/confirm/RJVVRRWQ"
-                  class="text-decoration-none" target="_blank">Udacity C++ Nanodegree</a>. Especially the <a
-                  href="https://github.com/jweber94/udacity_cpp_nanodegree_system_monitor" class="text-decoration-none"
-                  target="_blank">Linux System Monitor</a> which got me very deep in the linux system and my capstone
-                project, where I choosed to program my own <a
-                  href="https://github.com/jweber94/udacity_cpp_nanodegree_capstone_myCQ" class="text-decoration-none"
-                  target="_blank">terminal-based version of a local messenger</a> to learn about network programming in
-                C++. Besides these great courses, I learned a lot about machine learing doing the <a
-                  href="https://www.coursera.org/account/accomplishments/specialization/WED29RPMSFBA?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n"
-                  class="text-decoration-none" target="_blank">Deep Learning Specialization</a>, the <a a
-                  href="https://www.coursera.org/account/accomplishments/specialization/XP2NT6Y8EZMQ?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n"
-                  class="text-decoration-none" target="_blank">Reinforcement Learning Specialization</a> and the famous
-                <a href="https://www.coursera.org/account/accomplishments/verify/GJK598C2J7R5?utm_campaign=sharing_cta&utm_content=cert_image&utm_medium=certificate&utm_product=course&utm_source=link"
-                  class="text-decoration-none" target="_blank">Machine Learning</a> course at coursera, where I also
-                successfully did the programming assignments.</p>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 text-center" id="image_container">
-              <div class="col-lg-12 col-md-12 col-sm-12">
-                <img class="img-fluid" src="imgs/source-code-gf6ddda093_1920.jpg" alt="courses">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Footer -->
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="ms-3 col-md-4 col-sm-12 d-flex align-items-center">
-        <a href="/my_website/home/index.html" class="me-2 mb-md-0 text-muted text-decoration-none lh-1">
-          <img src="imgs/my_logo.svg" alt="Logo Jens" width="28" height="28">
+    <!-- Header -->
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/my_website/home/index.html"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none"
+        >
+          <img src="imgs/my_logo.svg" width="40" height="32" />
+          <span>Jens' Website</span>
         </a>
-        <span class="ms-3">&copy; 2022 Jens Weber</span>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a
+              href="/my_website/home/index.html"
+              class="nav-link"
+              aria-current="page"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="/my_website/cv/cv.html" class="nav-link"
+              >Curriculum Vitae</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="/my_website/projects/projects.html" class="nav-link active"
+              >Projects</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="/my_website/technologies/technologies.html"
+              class="nav-link"
+              >Technologies</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="/my_website/blog/blog.html" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="/my_website/contact/contact.html" class="nav-link"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </header>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+      <h1>Projects</h1>
+      <div class="intro_text">
+        Here are some projects that I build in my free time besides my full time
+        job and that I am most proud of. Have fun by looking at them and have a
+        look at the code on my github account. Please refer that I do these
+        projects in a non professional manner. Most of the time, I do the things
+        that I show off here for the first time to learn something which I'm
+        currently courious about or to use in it my full time job and not to
+        show off the most shiny project.
+      </div>
+      <!-- Mandelbrodt Set -->
+      <div class="px-5 py-2 row">
+        <div class="container">
+          <div id="kachel" class="container">
+            <div class="row py-2 px-2">
+              <div class="col-lg-8 col-md-8 col-sm-8 py-2 px-2">
+                <h2 class="project_heading">Mandelbrodt Convergency Radius</h2>
+                <p>
+                  Math is beautiful! I really like mathematical theory,
+                  especially if it is as beautiful as the mandelbrodt set. On
+                  the horizontal axis is the real part and on the vertical axis
+                  is the imaginary part of the complex number
+                  <math xmlns="http://www.w3.org/1998/Math/MathML"
+                    >z_i = z_{i+1}+c</math
+                  >. If we iterate this complex number sequence until the
+                  convergency radius is small enought and print this result as a
+                  color based on the convergency radius, we see the full beauty
+                  of mathmatical equations. Do you like math too? Try out the
+                  code of my project. Its very simple to run the docker
+                  container and produce this image and try out other complex
+                  number sequences and other parts of the mandelbrodt set. The
+                  project is written in plain C++ with no libraries. The idea
+                  for this project came from a university assignment that I did
+                  during my masters studies.
+                </p>
+                <a
+                  href="https://github.com/jweber94/complex_number_sequence"
+                  class="text-decoration-none link"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+              <div
+                class="col-lg-4 col-md-4 col-sm-4 text-center"
+                id="image_container"
+              >
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <a
+                    href="https://github.com/jweber94/complex_number_sequence"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="imgs/1A.png"
+                      alt="mandelbrod_set"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Dijkstras shortest path -->
+      <div class="px-5 py-2 row">
+        <div class="container">
+          <div id="kachel" class="container">
+            <div class="row py-2 px-2">
+              <div
+                class="col-lg-4 col-md-4 col-sm-4 text-center"
+                id="image_container"
+              >
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <a
+                    href="https://github.com/jweber94/dijkstras_shortest_path"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="imgs/dijksta_terminal_printout.png"
+                      alt="dijkstra"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 py-2 px-2">
+                <h2 class="project_heading">
+                  Dijkstras Shortest Path Algorithm
+                </h2>
+                <p>
+                  Dijkstras shortest path algorithm is widely used in
+                  appilcations from autonomous driving over game development to
+                  financial decision making. The project that you'll find on
+                  github is a just started try of implementing my own version of
+                  it from scratch. The focus was not to make the prettiest code
+                  or the most convenient implementation, but to get a very basic
+                  hands on to graph algorithms, especially to learn about the
+                  two implementation possabilities of implementing it as a graph
+                  class or a matrix. Have fun looking at this
+                  <i>currently unfinished</i> project.
+                </p>
+                <a
+                  href="https://github.com/jweber94/dijkstras_shortest_path"
+                  class="text-decoration-none link"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Angular ToDo List -->
+      <div class="px-5 py-2 row">
+        <div class="container">
+          <div id="kachel" class="container">
+            <div class="row py-2 px-2">
+              <div class="col-lg-8 col-md-8 col-sm-8 py-2 px-2">
+                <h2 class="project_heading">ToDo List with Angular</h2>
+                <p>
+                  Also I did the Hello World of CRUD applications. In order to
+                  get started with more advanced web applications I programmed a
+                  ToDo List app with angular 13 (which I noticed that it is also
+                  a good app to make your groceries shopping list ;-) ). While
+                  doing this, I learned the Typescript syntax as well as how
+                  angular projects are structured. The project is hosted on
+                  github pages and if you are curios about my implementation,
+                  you can check it out
+                  <a
+                    href="https://jweber94.github.io/angular_todo_app/"
+                    class="text-decoration-none link"
+                    target="_blank"
+                    >here</a
+                  >. I had a lot of fun doing this project and I'm sure to build
+                  another web app with angular soon.
+                </p>
+                <a
+                  href="https://github.com/jweber94/angular_todo_app"
+                  class="text-decoration-none link"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+              <div
+                class="col-lg-4 col-md-4 col-sm-4 text-center"
+                id="image_container"
+              >
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <a
+                    href="https://jweber94.github.io/angular_todo_app/"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid"
+                      src="imgs/220612_todo_screenshot.png"
+                      alt="my_website_logo"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- My Website -->
+      <div class="px-5 py-2 row">
+        <div class="container">
+          <div id="kachel" class="container">
+            <div class="row py-2 px-2">
+              <div
+                class="col-lg-4 col-md-4 col-sm-4 text-center"
+                id="image_container"
+              >
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <a href="/my_website/home/index.html" target="_blank">
+                    <img
+                      class="img-fluid"
+                      src="imgs/my_logo.svg"
+                      alt="my_website_logo"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-8 col-md-8 col-sm-8 py-2 px-2">
+                <h2 class="project_heading">My Website</h2>
+                <p>
+                  Also my website is a project for me, that I am very proud of.
+                  Since I do not have an educational background in computer
+                  science, I never learned something about web frontend
+                  technologies. To familiarize myself with the topic, I did the
+                  cousera courses "<a
+                    href="https://www.coursera.org/account/accomplishments/verify/N2PC3UUD9E5X?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+                    class="text-decoration-none link"
+                    target="_blank"
+                    >HTML, CSS and Javascript for Web Developers</a
+                  >" and "<a
+                    href="https://www.coursera.org/account/accomplishments/verify/PUCRCPDEGDEV?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+                    class="text-decoration-none link"
+                    target="_blank"
+                    >Single Page Web Applications with AngularJS</a
+                  >". After finishing these courses, I started programming my
+                  website as a first real world project. I am totally aware that
+                  this is far away from a modern front end application website,
+                  but as a first attemped to get my feed wet, I think it is a
+                  very good start.
+                </p>
+                <a
+                  href="https://github.com/jweber94/my_website"
+                  class="text-decoration-none link"
+                  target="_blank"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <ul class="nav col-md-4 col-sm-12 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" target="_blank" href="https://de.linkedin.com/in/jens-weber-1094"><svg
-              class="bi" width="24" height="24">
-              <use xlink:href="#linkedin" />
-            </svg></a></li>
-        <li class="ms-3"><a class="text-muted" target="_blank" href="https://github.com/jweber94"><svg class="bi"
-              width="24" height="24">
-              <use xlink:href="#github" />
-            </svg></a></li>
-      </ul>
-    </footer>
-  </div>
+      <!-- Other projects -->
+      <div class="px-5 py-2 row">
+        <div class="container">
+          <div id="kachel" class="container">
+            <div class="row py-2 px-2">
+              <div class="col-lg-8 col-md-8 col-sm-8 py-2 px-2">
+                <h2 class="project_heading">Other Projects</h2>
+                <p>
+                  As a former scientist and life long learner, I did and still
+                  do a lot of coures to familiarize myself with new technologies
+                  or learn about new algorithms or concepts that I don't know.
+                  The coolest projects were the ons that I did during the
+                  <a
+                    href="https://graduation.udacity.com/confirm/RJVVRRWQ"
+                    class="text-decoration-none"
+                    target="_blank"
+                    >Udacity C++ Nanodegree</a
+                  >. Especially the
+                  <a
+                    href="https://github.com/jweber94/udacity_cpp_nanodegree_system_monitor"
+                    class="text-decoration-none"
+                    target="_blank"
+                    >Linux System Monitor</a
+                  >
+                  which got me very deep in the linux system and my capstone
+                  project, where I choosed to program my own
+                  <a
+                    href="https://github.com/jweber94/udacity_cpp_nanodegree_capstone_myCQ"
+                    class="text-decoration-none"
+                    target="_blank"
+                    >terminal-based version of a local messenger</a
+                  >
+                  to learn about network programming in C++. Besides these great
+                  courses, I learned a lot about machine learing doing the
+                  <a
+                    href="https://www.coursera.org/account/accomplishments/specialization/WED29RPMSFBA?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n"
+                    class="text-decoration-none"
+                    target="_blank"
+                    >Deep Learning Specialization</a
+                  >, the
+                  <a
+                    a
+                    href="https://www.coursera.org/account/accomplishments/specialization/XP2NT6Y8EZMQ?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=s12n"
+                    class="text-decoration-none"
+                    target="_blank"
+                    >Reinforcement Learning Specialization</a
+                  >
+                  and the famous
+                  <a
+                    href="https://www.coursera.org/account/accomplishments/verify/GJK598C2J7R5?utm_campaign=sharing_cta&utm_content=cert_image&utm_medium=certificate&utm_product=course&utm_source=link"
+                    class="text-decoration-none"
+                    target="_blank"
+                    >Machine Learning</a
+                  >
+                  course at coursera, where I also successfully did the
+                  programming assignments.
+                </p>
+              </div>
+              <div
+                class="col-lg-4 col-md-4 col-sm-4 text-center"
+                id="image_container"
+              >
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <img
+                    class="img-fluid"
+                    src="imgs/source-code-gf6ddda093_1920.jpg"
+                    alt="courses"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- Javascript includes -->
-  <script src="src/jquery-3.6.0.min.js"></script>
-  <!-- needs to be included before bootstrap since bootstrap depends on jquery -->
-  <script src="src/bootstrap.min.js"></script>
-</body>
+    <!-- Footer -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="ms-3 col-md-4 col-sm-12 d-flex align-items-center">
+          <a
+            href="/my_website/home/index.html"
+            class="me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <img
+              src="imgs/my_logo.svg"
+              alt="Logo Jens"
+              width="28"
+              height="28"
+            />
+          </a>
+          <span class="ms-3">&copy; 2022 Jens Weber</span>
+        </div>
 
+        <ul
+          class="nav col-md-4 col-sm-12 justify-content-end list-unstyled d-flex"
+        >
+          <li class="ms-3">
+            <a
+              class="text-muted"
+              target="_blank"
+              href="https://de.linkedin.com/in/jens-weber-1094"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#linkedin" /></svg
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-muted"
+              target="_blank"
+              href="https://github.com/jweber94"
+              ><svg class="bi" width="24" height="24">
+                <use xlink:href="#github" /></svg
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Javascript includes -->
+    <script src="src/jquery-3.6.0.min.js"></script>
+    <!-- needs to be included before bootstrap since bootstrap depends on jquery -->
+    <script src="src/bootstrap.min.js"></script>
+  </body>
 </html>
